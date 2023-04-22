@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Oportunidades Salesforce</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Cadastro de Oportunidades Salesforce</h1>
+
+	<form>
+		<label>
+			<input type="checkbox" name="particular">
+			Particular
+		</label><br><br>
+
+		<label for="nome">Nome da Oportunidade:</label>
+		<input type="text" id="nome" name="nome"><br><br>
+
+		<label for="valor">Valor:</label>
+		<input type="number" id="valor" name="valor"><br><br>
+
+		<label for="fase">Fase:</label>
+<select id="fase" name="fase">
+  <option value="">Selecione uma opção</option>
+  <option value="Qualificação">Qualificação</option>
+  <option value="Contato Inicial">Contato Inicial</option>
+  <option value="Desenvolvimento">Desenvolvimento</option>
+  <option value="Proposta">Proposta</option>
+  <option value="Negociação">Negociação</option>
+  <option value="Fechamento">Fechamento</option>
+  <option value="Ganho">Ganho</option>
+  <option value="Perda">Perda</option>
+</select>
+
+
+<label for="tipo">Tipo:</label>
+<select id="tipo" name="tipo">
+  <option value="">Selecione uma opção</option>
+  <option value="Novo Cliente">Novo Cliente</option>
+  <option value="Cliente Existente - Adicionar Produto/Serviço">Cliente Existente - Adicionar Produto/Serviço</option>
+  <option value="Cliente Existente - Renovação">Cliente Existente - Renovação</option>
+  <option value="Cliente Existente - Upgrade">Cliente Existente - Upgrade</option>
+  <option value="Cliente Existente - Outros">Cliente Existente - Outros</option>
+</select>
+
+
+		<input type="submit" value="Salvar">
+	</form>
+
+</body>
+</html>
+
+
+ PARTE DO CSS
+ 
+ 
+ 
+	body {
+
+		background-color:rgb(57, 62, 220);
+		font-family: Arial, sans-serif;
+	}
+
+	h1 {
+		text-align: center;
+		color: #0e0303;
+	}
+
+	form {
+		margin: 0 auto;
+		max-width: 500px;
+		padding: 20px;
+		background-color: #5c90d8;
+		box-shadow: 0 2px 5px rgb(0, 0, 0);
+	}
+
+	label {
+		display: block;
+		font-size: 16px;
+		font-weight: bold;
+		color: #333;
+		margin-bottom: 10px;
+	}
+
+	input[type="checkbox"], input[type="radio"] {
+		margin-right: 5px;
+	}
+
+	input[type="text"], input[type="number"], select {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-size: 16px;
+	}
+
+	select {
+		height: 40px;
+	}
+
+	input[type="submit"] {
+		background-color: #333;
+		color: #fff;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #555;
+	}
